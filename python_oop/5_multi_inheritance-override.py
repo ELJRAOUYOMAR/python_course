@@ -3,6 +3,7 @@ class Animal:
         self.name = name
     
     def make_sound(self):
+        print("hello")
         pass  # Placeholder method, to be overridden by subclasses
 
 class Dog(Animal):
@@ -11,6 +12,7 @@ class Dog(Animal):
 
 class Cat(Animal):
     def make_sound(self):
+        super().make_sound()
         return "Meow!"
 
 class Bird(Animal):
