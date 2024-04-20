@@ -1,8 +1,9 @@
 # unitest 
+> "Trust, but Verify(with unittest 😁😅)"
 
 ![unittest](unittesting.png)
 
-> "Trust, but Verify(with unittest 😁😅)"
+
 
 ## definition:
 The unitest in python is a tiny code snippet that verifies a single aspects of your code's functionality.it is like a detective that checks if your functions and classes are doing what they're supposed to.
