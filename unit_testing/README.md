@@ -28,3 +28,18 @@ python -m unittest -v test_module
 ```bash
 python -m unittest -h
 ```
+- In Python's unittest module, the TestDiscovery feature allows you to automatically discover and run all test cases within a directory or module without needing to explicitly specify each test case.
+To use test discovery with unittest, follow these steps:
+1. Organize Your Tests: Ensure that your test files follow a naming convention that makes them discoverable. Typically, test files start with test_ or end with _test.py. Test classes should inherit from unittest.TestCase, and test methods should start with test_.
+2. Run the Test Discovery: Use the unittest test runner to discover and run your tests. You can do this from the command line or within your IDE.
+Here's how you can run test discovery from the command line:
+```bash
+python -m unittest discover
+```
+This command will search for all test modules in the current directory and run them.
+You can also specify a specific directory to search for tests:
+```bash
+python -m unittest discover tests
+```
+Replace tests with the name of the directory where your test modules are located.
+Output: After running the test discovery command, you'll see the output indicating which tests were discovered and whether they passed or failed.
