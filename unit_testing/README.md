@@ -21,6 +21,10 @@ A collection of test cases, it is groupes together for the purpose of running th
 
 ## Command-Line Interface
 - run tests with more detail (higher verbosity) by passing in the -v flag:
-''' python -m unittest -v test_module '''
+```bash 
+python -m unittest -v test_module
+```
 - For a list of all the command-line options:
-'''python -m unittest -h'''
+```bash
+python -m unittest -h
+```
