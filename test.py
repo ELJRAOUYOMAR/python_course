@@ -1,34 +1,25 @@
 
-class BaseGeometry:
-    '''A BaseGeometry class.'''
-    def area(self):
-        '''Method to compute this area.'''
-        raise Exception('area() is not implemented')
+def class_to_json(obj):
+    return obj.__dict__
 
-    def integer_validator(self, name, value):
-        '''Method for validating the value.'''
-        if type(value) != int:
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0 and  type(value) == int:
-            raise ValueError("{} must be greater than 0".format(name))
+class MyClass:
+    """ My class
+    """
 
+    def __init__(self, name):
+        self.name = name
+        self.number = 0
+
+    def __str__(self):
+        return "[MyClass] {} - {:d}".format(self.name, self.number)
     
-bg = BaseGeometry()
 
-bg.integer_validator("my_int", 12)
-bg.integer_validator("width", 89)
+m = MyClass("John")
+m.number = 89
+print(type(m))
+print(m)
 
-try:
-    bg.integer_validator("name", "John")
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+mj = class_to_json(m)
+print(type(mj))
+print(mj)
 
-try:
-    bg.integer_validator("age", 0)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
-
-try:
-    bg.integer_validator("distance", -4)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))

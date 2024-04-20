@@ -5,7 +5,8 @@ open() returns a file object, and is most commonly used with two positional argu
 f = open('workfile', 'w', encoding="utf-8")
 ```
 
-The first argument is a string containing the filename. The second argument is another string containing a few characters describing the way in which the file will be used.
+The first argument is a string containing the filename. 
+The second argument is another string containing a few characters describing the way in which the file will be used:
 - 'r' open for reading (default)
 - 'w' open for writing, truncating the file first
 - 'x' open for exclusive creation, failing if the file already exists
@@ -13,3 +14,4 @@ The first argument is a string containing the filename. The second argument is a
 - 'b' binary mode
 - 't text mode (default)
 - '+' open for updating (reading and writing)
+
