@@ -18,3 +18,9 @@ The smallest and individual Unit of testing, it checks for a specific response t
 - Test suit:
 A collection of test cases, it is groupes together for the purpose of running them collectively. In Python's unit testing framework, a test suit can contain multiple test cases organized into classes or modules.
 
+
+## Command-Line Interface
+- run tests with more detail (higher verbosity) by passing in the -v flag:
+''' python -m unittest -v test_module '''
+- For a list of all the command-line options:
+'''python -m unittest -h'''
