@@ -15,6 +15,6 @@ Represents the preparation needed to perform one or more tests, such as setting 
 The module that run the unit testing(unittest, pytest), the runner may use a Graphic Interface, a Textual Interface or return a special value to incate the results of executing the tests.
 - Test Case:
 The smallest and individual Unit of testing, it checks for a specific response to a particular set of inputs. unittest provides a base class, TestCase, which may used to create new test cases, this class use Asserts methods to check for actions and responses.
--Test suit:
+- Test suit:
 A collection of test cases, it is groupes together for the purpose of running them collectively. In Python's unit testing framework, a test suit can contain multiple test cases organized into classes or modules.
 
