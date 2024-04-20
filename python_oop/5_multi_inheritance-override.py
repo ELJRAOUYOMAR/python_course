@@ -1,3 +1,10 @@
+'''
+In object-oriented programming (OOP), "override" refers to the ability to provide a new 
+implementation for a method that is already defined in a superclass (or parent class) within
+ a subclass (or child class). When you override a method, you're essentially replacing the inherited
+   implementation with a new one that is specific to the subclass.
+'''
+
 class Animal:
     def __init__(self, name):
         self.name = name
