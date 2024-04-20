@@ -36,10 +36,10 @@ Here's how you can run test discovery from the command line:
 ```bash
 python -m unittest discover
 ```
-This command will search for all test modules in the current directory and run them.
-You can also specify a specific directory to search for tests:
+This command will search for all test modules in the current directory and run them.  
+You can also specify a specific directory to search for tests:  
 ```bash
 python -m unittest discover tests
 ```
-Replace tests with the name of the directory where your test modules are located.
+Replace tests with the name of the directory where your test modules are located.  
 Output: After running the test discovery command, you'll see the output indicating which tests were discovered and whether they passed or failed.
