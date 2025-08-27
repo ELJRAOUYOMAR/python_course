@@ -23,6 +23,13 @@ class Person:
     def info(self):
         return f"name of the class :{self.__class__.__name__}\nname: {self.name}\nage: {self.age}\n"
     
+class Person2:
+    def __init__(self, name):
+        self.name = name
+    
+    def info(self):
+        print(f"name of the person 2: {self.name}\n")
+
 class Car:
     def info(self, module, color):
         self.module = module
@@ -37,6 +44,9 @@ person1 = Person()
 person1.name = "Alice"
 person1.age = 13
 print(person1.info())
+
+# pass the name as constructor using the method init
+Person2("Mohamed").info()
 
 audi = Car()
 infos = audi.info("audi","black")
