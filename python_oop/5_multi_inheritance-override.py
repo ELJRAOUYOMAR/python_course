@@ -32,6 +32,8 @@ cat = Cat("Whiskers")
 bird = Bird("Tweetie")
 
 # Using the methods of the instances
-print(dog.name + " says: " + dog.make_sound())
 print(cat.name + " says: " + cat.make_sound())
+# bacause the make_sound overrided, so here just the make_sound() of child(subclass) will executs
+print(dog.name + " says: " + dog.make_sound())
+# also here
 print(bird.name + " says: " + bird.make_sound())
